@@ -1,0 +1,41 @@
+name: Relatar falha
+description: Informe uma falha reproduzível no software.
+title: '[Bug] '
+labels: [bug]
+body:
+  - type: textarea
+    id: ambiente
+    attributes:
+      label: Versão e ambiente
+      description: Informe commit/versão, sistema, Java/WPILib/Python e hardware/firmware quando aplicável.
+    validations:
+      required: true
+  - type: textarea
+    id: reproducao
+    attributes:
+      label: Como reproduzir
+      description: Liste passos e o menor exemplo que demonstra o problema.
+    validations:
+      required: true
+  - type: textarea
+    id: resultado
+    attributes:
+      label: Resultado esperado e observado
+    validations:
+      required: true
+  - type: dropdown
+    id: contexto
+    attributes:
+      label: Onde ocorreu?
+      options:
+        - Simulação ou testes de software
+        - Hardware real
+        - Build ou instalação
+        - Outro contexto
+    validations:
+      required: true
+  - type: textarea
+    id: evidencias
+    attributes:
+      label: Logs e evidências
+      description: Remova credenciais e dados pessoais antes de anexar.

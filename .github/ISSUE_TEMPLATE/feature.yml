@@ -1,0 +1,23 @@
+name: Propor melhoria
+description: Descreva uma necessidade ou melhoria no projeto.
+title: '[Melhoria] '
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problema
+    attributes:
+      label: Qual problema precisa ser resolvido?
+    validations:
+      required: true
+  - type: textarea
+    id: proposta
+    attributes:
+      label: Comportamento proposto
+      description: Inclua alternativas, impacto no uso e como verificar a melhoria.
+    validations:
+      required: true
+  - type: textarea
+    id: hardware
+    attributes:
+      label: Requisitos de hardware e segurança
+      description: Informe mecanismos, sensores ou efeitos em movimento, se aplicável.
